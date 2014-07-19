@@ -1,6 +1,6 @@
 /*
- * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
+ * Dual licensed under the GPL license:
+ *   
  *   http://www.gnu.org/licenses/gpl.html
  */
 
