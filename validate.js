@@ -16,7 +16,7 @@
 
         var getPosition = function ($element) {
             $element   = $element || this.$element;
-            var el     = $element[0];
+            var el  = $element[0];
             var isBody = el.tagName == 'BODY';
             return $.extend({}, (typeof el.getBoundingClientRect == 'function') ? el.getBoundingClientRect() : null, {
               scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop(),
@@ -64,7 +64,8 @@
                             var y = 0;
                             var pos = getPosition(el);
                             var posForm = getPosition(form);
-                            y = pos.top - posForm.top + pos.height;
+                            // y = pos.top - posForm.top + pos.height;
+                            y = pos.height;
                             x = pos.left - posForm.left;
                             $(this)
                                 .css("border","1px solid red")
